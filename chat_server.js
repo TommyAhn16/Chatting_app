@@ -16,9 +16,9 @@ const format_message = require('./helper/message_manage');
 const message_format = require("./helper/message_manage");
 
 // Variables 
-const PORT = 5000 || process.env.PORT;
+const PORT = 3000 || process.env.PORT;
 const folder = "client";
-// global variables
+// global variablese
 var rooms = [];
 var private_rooms =[]; 
 var banned_users = [{name:'',room:''}]; 
