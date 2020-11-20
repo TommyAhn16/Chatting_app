@@ -16,7 +16,7 @@ const format_message = require('./helper/message_manage');
 const message_format = require("./helper/message_manage");
 
 // Variables 
-const PORT = 3000 || process.env.PORT;
+const PORT = process.env.PORT  || 3000 ;
 const folder = "client";
 // global variablese
 var rooms = [];
