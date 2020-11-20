@@ -1,0 +1,28 @@
+{
+  "name": "module6-group-module6-436788",
+  "version": "1.0.0",
+  "description": "Real time chat app using Node JS and socket.io",
+  "main": "chat_server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "socket.io": "^3.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "node chat_server.js",
+    "dev": "nodemon chat_server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cse330-fall-2020/module6-group-module6-436788.git"
+  },
+  "author": "Tommy Ahn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cse330-fall-2020/module6-group-module6-436788/issues"
+  },
+  "homepage": "https://github.com/cse330-fall-2020/module6-group-module6-436788#readme"
+}

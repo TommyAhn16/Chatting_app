@@ -1,0 +1,63 @@
+<!-- /* Reference: HTML framework was adopted from https://github.com/bradtraversy/chatcord/tree/master/_html_css */ -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Create Private Room </title>
+	</head>
+	<body>
+		<div class="join-container">
+			<header class="join-header">
+				<h1> New Private Room</h1>
+			</header>
+			<main class="join-main">
+				<form id='Room_info' >
+                    <div class="form-control">
+                        <label for="creator">Creator</label>
+                        <input
+                            type="text"
+                            name="creator"
+                            id="creator"
+                            placeholder="Enter your user name..."
+                            required
+                        />
+                    </div>
+					<div class="form-control">
+						<label for="room_name">Room Name</label>
+						<input
+							type="text"
+							name="room_name"
+							id="room_name"
+							placeholder="Enter room name..."
+							required
+                        />
+                    </div>
+					<div class="form-control">
+						<label for="password">Password</label>
+						<input
+							type="text"
+							name="password"
+							id="password"
+							placeholder="Enter room password..."
+							required
+                        />
+                    </div>
+					<button type="submit" class="btn" >Create Room</button>
+				
+				</form>
+            </main>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="make_private_room.js"></script>
+	</body>
+</html>
+<!-- /* Reference: HTML framework was adopted from https://github.com/bradtraversy/chatcord/tree/master/_html_css */ -->

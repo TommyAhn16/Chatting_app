@@ -1,0 +1,81 @@
+<!-- /* Reference: HTML framework was adopted from https://github.com/bradtraversy/chatcord/tree/master/_html_css */ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <title>Chat Room</title>
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <h1>Chat Room</h1>
+      <form id="kick_out">
+        <label for="k_user"><b>User : </b></label>
+        <select name="k_user" id="k_user">
+        </select>
+        <button class="btn">Kick Out</button>
+      </form>
+      <form id = "ban">
+        <label for="users_ban"><b>User : </b></label>
+        <select name="users_ban" id="users_ban">
+        </select>
+        <button class="btn">Ban</button>
+      </form>
+
+      <form id="delete_room">
+        <button class="btn">Delete Room</button>
+      </form>
+
+      <form action="index.html" id="exit_room">
+        <button class="btn">Exit Room</button>
+      </form>
+    </header>
+    <main class="chat-main">
+      <div class="chat-sidebar">
+        <h3><i class="fas fa-comments"></i> Room Name:</h3>
+        <h2 id="room-name">Room Name</h2>
+        <h3><i class="fas fa-users"></i> Owner </h3>
+        <ul id="owner"></ul>
+        <br>
+        <h3><i class="fas fa-users"></i> Users </h3>
+        <ul id="users">
+        </ul>
+      </div>
+      <div class="chat-messages">
+      </div>
+    </main>
+    <div class="chat-form-container">
+      <form id="chat-form">
+        <div>
+          <label for="msg_type"><b>To.</b></label>
+          <p>
+          <select name="msg_type" id="msg_type">
+            <option value="All">All</option>
+          </select>
+          </p>
+        </div>
+        <input
+          id="msg"
+          type="text"
+          placeholder="Enter Message"
+          required
+          autocomplete="off"
+        />
+        <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+      </form>
+    
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" 
+  integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w==" 
+  crossorigin="anonymous"></script>
+  
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="chat_room.js"></script>
+  
+</body>
+</html>
+<!-- /* Reference: HTML framework was adopted from https://github.com/bradtraversy/chatcord/tree/master/_html_css */ -->
