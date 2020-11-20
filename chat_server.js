@@ -16,7 +16,7 @@ const format_message = require('./helper/message_manage');
 const message_format = require("./helper/message_manage");
 
 // Variables 
-const port = 5000 || process.env.PORT;
+const PORT = 5000 || process.env.PORT;
 const folder = "client";
 // global variables
 var rooms = [];
@@ -182,4 +182,4 @@ io.on("connection", socket => {
 }); 
 
 // Listen for HTTP connections. Make sure the port number matches
-server.listen(port, () => console.log(`server on ${port}`));
+server.listen(PORT, () => console.log(`server on ${PORT}`));
